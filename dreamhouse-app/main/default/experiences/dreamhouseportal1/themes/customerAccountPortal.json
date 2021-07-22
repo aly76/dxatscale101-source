@@ -1,0 +1,130 @@
+{
+  "activeBrandingSetId" : "dd938e4a-d266-416a-8180-eac6dbb2b8d4",
+  "customCSS" : "",
+  "developerName" : "cpt",
+  "id" : "d1a208db-6293-4f0c-934d-a00817f08c07",
+  "label" : "Customer Account Portal",
+  "layouts" : {
+    "Inner" : "475b6275-9590-456f-a17c-a3ed73807df5",
+    "Login" : "972398d4-cc71-4cc0-b271-7b9ce2bc9a30",
+    "ServiceNotAvailable" : "b98093b8-6655-43b5-b517-419f4110c685"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "972398d4-cc71-4cc0-b271-7b9ce2bc9a30",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "b1d710f5-cb77-4fbf-b6eb-b3a123452674",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "b4899f02-2671-46fc-a5ed-2b3361944010",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "6acd4e80-61ed-456e-9f7d-cb7c07293423",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentName" : "siteforce:cptBody",
+    "id" : "475b6275-9590-456f-a17c-a3ed73807df5",
+    "label" : "Default",
+    "regions" : [ {
+      "id" : "c5b1b1de-babb-42f3-bef6-c1caaa29798d",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "maxAutoCompleteResults" : 5,
+          "searchLabel" : "Search...",
+          "searchObjects" : [ {
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
+          }, {
+            "isPublic" : false,
+            "name" : "Case"
+          }, {
+            "isPublic" : true,
+            "name" : "ContentDocument"
+          } ]
+        },
+        "componentName" : "forceCommunity:globalSearchInput",
+        "id" : "363495e2-c387-4a8b-87a8-7f1ac6d0b40b",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "3256cc83-9c56-49b7-a1af-0cf1d35f33d6",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "accountManagementLabel" : "Account Management",
+          "communityBuilderLabel" : "Experience Builder",
+          "communitySetupLabel" : "Salesforce Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : false,
+          "includeMessages" : false,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showAccountManagement" : true,
+          "showUserSettings" : false,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "5b187c3c-3630-47ef-9873-5f5c14a8bbf7",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "fc62bb37-11ac-48a5-87a7-cf8844178f06",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "",
+          "hideAppLauncher" : true,
+          "hideHomeText" : false
+        },
+        "componentName" : "forceCommunity:globalNavigation",
+        "id" : "86272ee6-70ea-4a06-a676-73f173382113",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "e2ef3493-ac7f-44bb-a895-cf21d1eb6a9f",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "id" : "79901e9f-5aa4-4640-9242-eabd5842133f",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "id" : "e9c4762a-3321-447e-98e1-59e6ecc5b053",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "b98093b8-6655-43b5-b517-419f4110c685",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "fef45927-b03a-4258-9df3-5179e40497f7",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "16da457b-c37f-463c-aef1-cc4c68f2c537",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}
